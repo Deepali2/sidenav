@@ -1,3 +1,5 @@
+export const countries = ['Select', 'UnitedStates', 'Canada', 'Spain', 'India', 'Brazil'];
+
 export const segments = [
   'Engagement',
   'Linear TV',
@@ -11,4 +13,4 @@ export const segments = [
   'Website Pixel',
   'TV Plus',
   'Remote File'
-]
+];

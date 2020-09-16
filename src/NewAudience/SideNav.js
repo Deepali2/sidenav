@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const SideNav = ({ segments, segment, setSegment, country, setCountry }) => {
+  const countries = ['UnitedStates', 'Canada', 'Spain', 'India', 'Brazil'];
 
+  const changeCountry = (e) => {
+    if (e.target.tagName.toLowerCase() === 'a') {
+      setCountry(e.target.innerHTML);
+    }
+  }
 
-const SideNav = ({ segments, segment, setSegment }) => {
-  const countries = ['UnitedStates', 'Canada', 'Spain', 'India']
   const changeSegment = (e) => {
     setSegment(e.target.innerHTML);
   }
@@ -13,7 +18,7 @@ const SideNav = ({ segments, segment, setSegment }) => {
     <>
       <div>
         <label htmlFor="country-dropdown">Audience Country</label>
-        <DropdownButton id="country-dropdown" title="Select">
+        <DropdownButton id="country-dropdown" title={country} onClick={changeCountry}>
           {countries.map((country, index) => (
             <Dropdown.Item href="#" key={index}>{country}</Dropdown.Item>
           ))}        
