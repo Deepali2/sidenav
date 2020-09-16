@@ -1,12 +1,13 @@
 import React from "react";
 
-import { segments } from './data';
-
-const SideNav = props => {
+const SideNav = ({ segments, segment, setSegment }) => {
+  const changeSegment = (e) => {
+    setSegment(e.target.innerHTML);
+  }
   return (
       <>        
-        {segments.map((segment, index) => (           
-          <div key={index}>{segment}</div>           
+        {segments.map((element, index) => (           
+          <div key={index} onClick={changeSegment}>{element}</div>           
         ))}
       </>
   );
