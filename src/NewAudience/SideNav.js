@@ -5,11 +5,14 @@ const SideNav = ({ segments, segment, setSegment }) => {
     setSegment(e.target.innerHTML);
   }
   return (
-      <>        
-        {segments.map((element, index) => (           
-          <div key={index} onClick={changeSegment}>{element}</div>           
+    <>
+      <div>Countries Selection</div>
+      <ul>
+        {segments.map((element, index) => (
+          <li key={index} onClick={changeSegment}>{element}</li>
         ))}
-      </>
+      </ul>      
+    </>
   );
 };
 

@@ -13,3 +13,7 @@
 .details {
   width: 80%;
 }
+
+.side-nav ul {
+  list-style: none;
+}
