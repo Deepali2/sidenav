@@ -19,6 +19,7 @@
 
 .details {
   width: 80%;
+  overflow: scroll;
 }
 
 .side-nav ul {
