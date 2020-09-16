@@ -5,6 +5,7 @@ const DetailsColumn = ({ segment }) => {
     <div>
       <div>
         {segment}
+        <hr />
       </div>
       <div>Study Period</div>
       <div>ViewerShip Threshold</div>
