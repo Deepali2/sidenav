@@ -8,11 +8,10 @@ const Dashboard = props => {
         <>
          <Container fluid>
                 <Row>
-                    <Col id="sidebar-wrapper">      
-                      {/* <Sidebar /> */}
-                      links column
+                    <Col xs="2" id="sidebar-wrapper">      
+                      <Sidebar />
                     </Col>
-                    <Col id="page-content-wrapper">
+                    <Col xs="10" id="page-content-wrapper">
                         Details Column
                     </Col> 
                 </Row>

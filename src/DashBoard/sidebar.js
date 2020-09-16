@@ -8,7 +8,7 @@ const Sidebar = props => {
         <>
           <div className="sidebar-sticky">
 
-            <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
+            <Nav className="col-md-12 d-md-block sidebar"
                 activeKey="/home"
                 onSelect={selectedKey => alert(`selected ${selectedKey}`)}
             >

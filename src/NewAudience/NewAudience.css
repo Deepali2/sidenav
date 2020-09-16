@@ -1,0 +1,11 @@
+.new-audience-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.side-nav {
+  border-right: 1px solid lightgray;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+}
