@@ -10,7 +10,7 @@ const SideNav = props => {
         <Table>
          {segments.map((segment, index) => (
            <tr>
-             <a href="#" key={index}>{segment}</a>
+             <p key={index}>{segment}</p>
            </tr>
          ))}
         </Table>
