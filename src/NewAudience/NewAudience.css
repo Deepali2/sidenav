@@ -10,6 +10,13 @@
   position: fixed;
 }
 
+#country-dropdown {
+  background-color: white;
+  color: black;
+  margin: none;
+  width: 90%;
+}
+
 .details {
   width: 80%;
 }
